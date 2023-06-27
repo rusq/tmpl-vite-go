@@ -1,0 +1,21 @@
+# These are normally all in SCM, but for our
+# sample program, I want all of these automatically generated:
+
+public
+src
+vue-temp
+package-lock.json
+package.json
+go.mod
+go.sum
+
+# built by script
+frontend
+frontend-*
+
+__debug_bin
+vitemodtest
+test_program
+tmpl-vite-go
+*.log
+*~

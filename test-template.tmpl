@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang='en'>
+{{ $vue := . }}
+    <head>
+        <meta charset='utf-8'>
+        <title>Sample Vite-Go Page</title>
+        {{ if $vue }}
+          {{ $vue.RenderTags }}
+        {{ end }}
+
+        <style>
+        div.container {
+          padding: 3rem;
+        }
+        </style>
+    </head>
+    <body>
+        <main>
+        {{ if $vue }}
+          {{ $id := "app" }}
+          {{ if eq $vue.Platform "react" }}
+            {{ $id = "root" }}
+          {{ end }}
+          <div id="{{ $id }}"></div>
+        {{ else }}
+          <div id="app"></div>
+        {{ end }}
+        </main>
+    </body>
+</html>

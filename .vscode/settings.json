@@ -1,0 +1,6 @@
+{
+  "makefile.extensionOutputFolder": "./.vscode",
+  "gopls": {
+    // "build.buildFlags": ["-tags", "devel"]
+  }
+}
